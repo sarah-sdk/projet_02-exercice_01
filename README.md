@@ -20,8 +20,8 @@ Interactive web application to visualize historical performance data of countrie
 Clone the repository:
 
 ```bash
-git clone https://github.com/openclassrooms/p2-dfsjs.git
-cd p2-dfsjs
+git clone https://github.com/sarah-sdk/projet_02.git
+cd projet_02
 ```
 
 Install dependencies:
@@ -61,12 +61,17 @@ npm run lint
 ## 📁 Project Structure
 
 ```
-p2-dfsjs/
-├── public/              # Static public assets
+projet_02/
 ├── src/
-│   ├── App.tsx         # Main application component
-│   ├── main.tsx        # React entry point
-│   └── index.css       # Global styles
+│   ├── app/            # Application entry component and routing configuration
+│   ├── components/     # Reusable UI components, statistic cards, and charts
+│   ├── data/           # Local Olympic Games dataset
+│   ├── hooks/          # Custom hooks for data access and country lookup
+│   ├── models/         # TypeScript types and interfaces for the domain data
+│   ├── pages/          # Dashboard, country details, and not-found pages
+│   ├── utils/          # Statistical calculations and chart data preparation
+│   ├── index.css       # Global styles and Tailwind CSS entry point
+│   └── main.tsx        # React application entry point
 ├── index.html          # Main HTML page
 ├── package.json        # Project dependencies
 ├── tsconfig.json       # TypeScript configuration
